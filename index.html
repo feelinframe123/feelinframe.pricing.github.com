@@ -4,174 +4,162 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Feel.Inframe Photography</title>
+    <!-- Font Awesome Icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <!-- Custom CSS -->
     <link rel="stylesheet" href="styles.css">
-    <!-- Lucide Icons -->
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/lucide/0.263.1/lucide.min.js"></script>
 </head>
 <body>
-    <!-- Promo Popup -->
-    <div class="promo-popup">
-        <div class="promo-content">
-            <div class="promo-text">
-                <div class="promo-title">✨ Special Offer</div>
-                <div class="promo-subtitle">Book with a friend and get</div>
-                <div class="promo-price">Rp 50.000 OFF</div>
-            </div>
+    <!-- Navigation -->
+    <nav class="navbar">
+        <div class="nav-container">
+            <div class="logo">Feel.Inframe</div>
+            <ul class="nav-links">
+                <li><a href="#home">Home</a></li>
+                <li><a href="#services">Services</a></li>
+                <li><a href="#packages">Packages</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
         </div>
-    </div>
+    </nav>
 
     <!-- Hero Section -->
-    <div class="hero-section">
-        <div class="hero-overlay"></div>
+    <section id="home" class="hero">
         <div class="hero-content">
-            <div class="badge">Abadikan Momen Wisudamu ✨</div>
-            <h1 class="hero-title">FEEL.INFRAME PHOTOGRAPHY</h1>
-            <p class="hero-description">
-                Kami hadir untuk mengabadikan momen spesialmu dengan sentuhan profesional dan estetik yang memukau
-            </p>
-            
-            <!-- Features Grid -->
+            <div class="promo-badge">
+                <span>✨ Special Promo</span>
+            </div>
+            <h1>FEEL.INFRAME PHOTOGRAPHY</h1>
+            <p>Abadikan momen spesialmu dengan sentuhan profesional dan estetik yang memukau</p>
+            <a href="#packages" class="cta-button">Explore Packages</a>
+        </div>
+    </section>
+
+    <!-- Features Section -->
+    <section id="services" class="features">
+        <div class="container">
+            <h2 class="section-title">Our Services</h2>
             <div class="features-grid">
                 <div class="feature-card">
-                    <div class="feature-icon">
-                        <i data-lucide="camera"></i>
-                    </div>
+                    <i class="fas fa-camera"></i>
                     <h3>Premium Quality</h3>
                     <p>Hasil foto berkualitas tinggi dengan editing profesional</p>
                 </div>
                 <div class="feature-card">
-                    <div class="feature-icon">
-                        <i data-lucide="clock"></i>
-                    </div>
+                    <i class="fas fa-clock"></i>
                     <h3>Fleksibel</h3>
                     <p>Jadwal yang bisa disesuaikan dengan kebutuhanmu</p>
                 </div>
                 <div class="feature-card">
-                    <div class="feature-icon">
-                        <i data-lucide="map-pin"></i>
-                    </div>
+                    <i class="fas fa-map-marker-alt"></i>
                     <h3>Lokasi Outdoor</h3>
                     <p>Pilihan lokasi yang aesthetic untuk hasil terbaik</p>
                 </div>
                 <div class="feature-card">
-                    <div class="feature-icon">
-                        <i data-lucide="users"></i>
-                    </div>
+                    <i class="fas fa-users"></i>
                     <h3>Group Photo</h3>
                     <p>Bisa foto bersama keluarga dan teman-teman</p>
                 </div>
             </div>
         </div>
-    </div>
+    </section>
 
     <!-- Promo Section -->
-    <div class="promo-section">
-        <div class="promo-card">
-            <h2>Special Promo! 🎉</h2>
-            <p class="promo-text">Ajak temanmu untuk booking slot foto dan dapatkan</p>
-            <p class="promo-price">Diskon Rp 50.000</p>
-            <p class="promo-terms">*Syarat dan ketentuan berlaku</p>
-        </div>
-    </div>
-
-    <!-- Pricing Section -->
-    <div class="pricing-section">
-        <div class="pricing-header">
-            <h2>Pilih Paket Foto</h2>
-            <p>Kami menawarkan berbagai paket yang bisa disesuaikan dengan kebutuhanmu</p>
-        </div>
-        
-        <div class="pricing-grid">
-            <!-- Basic Package -->
-            <div class="pricing-card">
-                <h3>PAKET FOTO BASIC</h3>
-                <div class="price">Rp 350K<span>/jam</span></div>
-                <button class="benefits-toggle" onclick="toggleBenefits(this)">
-                    Benefit yang kamu dapat
-                    <i data-lucide="chevron-down"></i>
-                </button>
-                <div class="benefits-list hidden">
-                    <div class="benefit-item">• 1 jam sesi foto</div>
-                    <div class="benefit-item">• Bebas berfoto selama sesi berlangsung</div>
-                    <div class="benefit-item">• All file photo in Google drive (bisa diakses hingga 8 hari)</div>
-                    <div class="benefit-item">• Tanpa minimal foto edit premium lightroom</div>
-                    <div class="benefit-item">• Boleh foto bareng keluarga, pasangan, teman</div>
-                    <div class="benefit-item">• Free moodboard dari kami</div>
-                </div>
-                <a href="https://wa.me/6282345695620" class="book-button">Book Now</a>
-            </div>
-
-            <!-- Priority Package -->
-            <div class="pricing-card popular">
-                <div class="popular-badge">
-                    <i data-lucide="star"></i> Most Popular
-                </div>
-                <h3>PAKET FOTO PRIORITAS</h3>
-                <div class="price">Rp 650K<span>/jam</span></div>
-                <button class="benefits-toggle" onclick="toggleBenefits(this)">
-                    Benefit yang kamu dapat
-                    <i data-lucide="chevron-down"></i>
-                </button>
-                <div class="benefits-list hidden">
-                    <div class="benefit-item">• 2 jam sesi foto</div>
-                    <div class="benefit-item">• Bebas berfoto selama sesi berlangsung</div>
-                    <div class="benefit-item">• Bebas pilih 2 lokasi foto (free transport)</div>
-                    <div class="benefit-item">• All file photo in Google drive (10 hari akses)</div>
-                    <div class="benefit-item">• Tanpa minimal foto edit premium lightroom</div>
-                    <div class="benefit-item">• Boleh foto bareng keluarga, pasangan, teman</div>
-                    <div class="benefit-item">• Free moodboard dari kami</div>
-                </div>
-                <a href="https://wa.me/6282345695620" class="book-button">Book Now</a>
-            </div>
-
-            <!-- Budget Package -->
-            <div class="pricing-card">
-                <h3>PAKET FOTO LEBIH HEMAT</h3>
-                <div class="price">Rp 450K<span>/jam</span></div>
-                <button class="benefits-toggle" onclick="toggleBenefits(this)">
-                    Benefit yang kamu dapat
-                    <i data-lucide="chevron-down"></i>
-                </button>
-                <div class="benefits-list hidden">
-                    <div class="benefit-item">• Maximal 2 orang in frame</div>
-                    <div class="benefit-item">• 1 jam sesi foto</div>
-                    <div class="benefit-item">• Bebas berfoto selama sesi berlangsung</div>
-                    <div class="benefit-item">• All file photo in Google drive (8 hari akses)</div>
-                    <div class="benefit-item">• Tanpa minimal foto edit premium lightroom</div>
-                    <div class="benefit-item">• Free moodboard dari kami</div>
-                </div>
-                <a href="https://wa.me/6282345695620" class="book-button">Book Now</a>
+    <section class="promo">
+        <div class="container">
+            <div class="promo-card">
+                <h2>Special Offer! 🎉</h2>
+                <p>Ajak temanmu untuk booking slot foto dan dapatkan</p>
+                <div class="promo-price">Diskon Rp 50.000</div>
+                <small>*Syarat dan ketentuan berlaku</small>
             </div>
         </div>
+    </section>
 
-        <!-- Contact Section -->
-        <div class="contact-section">
-            <h3>Hubungi Kami</h3>
-            <div class="contact-buttons">
-                <a href="https://instagram.com/feel.inframe" class="contact-button">
-                    <i data-lucide="instagram"></i>
+    <!-- Packages Section -->
+    <section id="packages" class="packages">
+        <div class="container">
+            <h2 class="section-title">Our Packages</h2>
+            <div class="packages-grid">
+                <div class="package-card">
+                    <h3>PAKET FOTO BASIC</h3>
+                    <div class="price">Rp 350K<span>/jam</span></div>
+                    <ul class="benefits">
+                        <li>1 jam sesi foto</li>
+                        <li>Bebas berfoto selama sesi berlangsung</li>
+                        <li>All file photo in Google drive (8 hari)</li>
+                        <li>Edit premium lightroom</li>
+                        <li>Boleh foto bareng keluarga/teman</li>
+                        <li>Free moodboard</li>
+                    </ul>
+                    <a href="https://wa.me/6282345695620" class="book-button">Book Now</a>
+                </div>
+
+                <div class="package-card featured">
+                    <div class="popular-tag">Most Popular</div>
+                    <h3>PAKET FOTO PRIORITAS</h3>
+                    <div class="price">Rp 650K<span>/jam</span></div>
+                    <ul class="benefits">
+                        <li>2 jam sesi foto</li>
+                        <li>Bebas berfoto selama sesi berlangsung</li>
+                        <li>Bebas pilih 2 lokasi foto (free transport)</li>
+                        <li>All file photo in Google drive (10 hari)</li>
+                        <li>Edit premium lightroom</li>
+                        <li>Boleh foto bareng keluarga/teman</li>
+                        <li>Free moodboard</li>
+                    </ul>
+                    <a href="https://wa.me/6282345695620" class="book-button">Book Now</a>
+                </div>
+
+                <div class="package-card">
+                    <h3>PAKET FOTO HEMAT</h3>
+                    <div class="price">Rp 450K<span>/jam</span></div>
+                    <ul class="benefits">
+                        <li>Maximal 2 orang in frame</li>
+                        <li>1 jam sesi foto</li>
+                        <li>Bebas berfoto selama sesi berlangsung</li>
+                        <li>All file photo in Google drive (8 hari)</li>
+                        <li>Edit premium lightroom</li>
+                        <li>Free moodboard</li>
+                    </ul>
+                    <a href="https://wa.me/6282345695620" class="book-button">Book Now</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="contact">
+        <div class="container">
+            <h2 class="section-title">Contact Us</h2>
+            <div class="contact-links">
+                <a href="https://instagram.com/feel.inframe" class="social-link">
+                    <i class="fab fa-instagram"></i>
                     <span>@feel.inframe</span>
                 </a>
-                <a href="https://wa.me/6282345695620" class="contact-button">
-                    <i data-lucide="phone"></i>
+                <a href="https://wa.me/6282345695620" class="social-link">
+                    <i class="fab fa-whatsapp"></i>
                     <span>+62-823-4569-5620</span>
                 </a>
             </div>
         </div>
+    </section>
+
+    <!-- Floating Promo Button -->
+    <div class="floating-promo">
+        <div class="promo-content">
+            <div class="promo-text">
+                <strong>✨ Special Offer</strong>
+                <span>Book with a friend and get</span>
+                <strong class="discount">Rp 50.000 OFF</strong>
+            </div>
+        </div>
     </div>
 
-    <script>
-        // Initialize Lucide icons
-        lucide.createIcons();
-
-        // Toggle benefits list
-        function toggleBenefits(button) {
-            const benefitsList = button.nextElementSibling;
-            const icon = button.querySelector('[data-lucide="chevron-down"]');
-            
-            benefitsList.classList.toggle('hidden');
-            icon.classList.toggle('rotate');
-        }
-    </script>
+    <footer class="footer">
+        <div class="container">
+            <p>&copy; 2024 Feel.Inframe Photography. All rights reserved.</p>
+        </div>
+    </footer>
 </body>
 </html>
